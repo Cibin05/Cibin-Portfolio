@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cibin S - Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .name {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #475569;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #1d4ed8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.4em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1em;
+      color: #64748b;
+      border-bottom: 2px solid #cbd5e1;
+      display: inline-block;
+      padding: 4px 10px;
+      margin-top: 10px;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-text {
+      max-width: 500px;
+    }
+
+    .intro-text h2 {
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #1e293b;
+    }
+
+    .intro-text p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #334155;
+    }
+
+    .scroll-btn {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
+    }
+
+    .scroll-btn:hover {
+      background-color: #2563eb;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro img {
+        margin: 0 0 20px 0;
+      }
+
+      .intro-text {
+        max-width: 100%;
+      }
+
+      header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 15px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="name">CIBIN S</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">My Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>My Vision: Driving Growth Through Data & Insights</h1>
+    <div class="section-title">who i am</div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="intro" id="about">
+    <img src="C:\Users\ASUS\Desktop\website\cibin[passport size].jpg" alt="Cibin Photo">
+    <div class="intro-text">
+      <h2>I'm Cibin S, Data Analytics Enthusiast</h2>
+      <p>
+        I’m a tech-savvy individual with a strong interest in Data Analysis and Visualization. I enjoy working with data to uncover insights that help businesses make better decisions. I’ve created dashboards, analysis reports, and worked with SQL to solve real-world problems. In the future, I plan to pursue a Master’s in Data Science to deepen my skills and grow in the field of analytics.
+      </p>
+      <button class="scroll-btn" onclick="document.getElementById('projects').scrollIntoView()">Scroll Down</button>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="projects" id="projects" style="padding: 40px; background-color: #ffffff;">
+    <h2 style="text-align: center; color: #1e293b;">My Projects</h2>
+    <div style="max-width: 1000px; margin: auto;">
+      <div style="margin-bottom: 30px; text-align: center;">
+        <h3 style="color: #3b82f6;">Call Centre Analysis Dashboard</h3>
+        <img src="C:\Users\ASUS\Desktop\website\Screenshot 2025-06-24 132306.png" alt="Call Centre Dashboard" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 15px;"/>
+        <p style="color: #334155; margin-top: 10px;">
+          Designed an interactive Excel dashboard using a Kaggle call center dataset to track call trends, agent performance, and customer satisfaction.
+        </p>
+      </div>
+      <div style="margin-bottom: 30px; text-align: center;">
+        <h3 style="color: #3b82f6;">Electric Vehicle Sales Analysis Dashboard</h3>
+        <img src="Screenshot 2025-06-24 130510.png" alt="Vehicle Sales Dashboard" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 15px;"/>
+        <p style="color: #334155; margin-top: 10px;">
+          Built using Power BI, this dashboard visualizes regional and brand-wise electric vehicle sales insights including battery capacity, fast charging options, and type distribution.
+        </p>
+      </div>
+      <div style="margin-bottom: 30px; text-align: center;">
+        <h3 style="color: #3b82f6;">Power BI Analysis of Zomato India</h3>
+        <img src="C:\Users\ASUS\Desktop\website\Screenshot 2025-06-24 134001.png" alt="Zomato Dashboard" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 15px;"/>
+        <p style="color: #334155; margin-top: 10px;">
+          This Power BI dashboard analyzes Zomato India's restaurant trends, showing Truffles as the most voted restaurant and highlighting average bill amounts and popular categories like Cafes, Dine-out, and Delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" style="padding: 60px 20px; background-color: #ffffff;">
+    <h2 style="text-align: center; font-size: 2em; font-weight: bold; color: #1e293b;">My Skills</h2>
+    <p style="text-align: center; font-style: italic; color: #64748b; margin-bottom: 40px;">What I Know</p>
+
+    <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="color: #1e293b;">My creative skills & experiences</h3>
+        <p style="line-height: 1.6; color: #475569;">
+          I have a solid foundation in statistical analysis and sales, along with hands-on experience in Excel, Power BI, and MySQL. I enjoy working with data visualization, cleaning, and predictive modeling to extract insights and drive smarter business decisions.
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 300px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+          <!-- Skill Card Template -->
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI" />
+            <h4 style="margin-top: 15px; color: #1e293b;">Power BI</h4>
+          </div>
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019--v1.png" alt="Excel" />
+            <h4 style="margin-top: 15px; color: #1e293b;">Excel</h4>
+          </div>
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/ios-filled/50/4e73df/sql.png" alt="SQL" />
+            <h4 style="margin-top: 15px; color: #1e293b;">SQL</h4>
+          </div>
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" alt="Java" />
+            <h4 style="margin-top: 15px; color: #1e293b;">Java</h4>
+          </div>
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" />
+            <h4 style="margin-top: 15px; color: #1e293b;">C</h4>
+          </div>
+          <div style="background-color: white; text-align: center; padding: 30px 20px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" />
+            <h4 style="margin-top: 15px; color: #1e293b;">HTML</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+ <div id="contact" style="padding: 60px 20px; background-color: #f1f5f9;">
+  <h2 style="text-align: center; font-size: 2em; font-weight: bold; color: #1e293b;">Contact Me</h2>
+
+  <div style="max-width: 500px; margin: 30px auto 0; font-size: 1em; color: #475569; line-height: 2; padding-left: 20%;">
+    <p><img src="https://img.icons8.com/ios-glyphs/20/1e293b/phone.png"/> <strong>Phone:</strong> +91 90037 34115</p>
+    <p><img src="https://img.icons8.com/ios-glyphs/20/1e293b/new-post.png"/> <strong>Email:</strong> cibinshanmugasundaram@gmail.com</p>
+    <p><img src="https://img.icons8.com/ios-glyphs/20/1e293b/marker.png"/> <strong>Address:</strong> Erode, Tamil Nadu, India</p>
+    <p><img src="https://img.icons8.com/ios-glyphs/20/1e293b/linkedin.png"/> <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/cibin-s" target="_blank" style="color: #3b82f6; text-decoration: none;">
+        linkedin.com/in/cibin-s
+      </a>
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>
